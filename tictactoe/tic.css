@@ -1,0 +1,81 @@
+body {
+    background-color: #FF66CC; /* Background color */
+    background-image: linear-gradient(45deg, #FF66CC, #FFCC66); /* Gradient for a vibrant effect */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px; /* Adjust this value as needed */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(204, 153, 255, 0.8); /* Light purple background for the game container */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners for the container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Drop shadow for a cool effect */
+}
+
+.title-box {
+    background-color: #FF9933; /* Background color for the title box */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners for the title box */
+    margin-bottom: 20px; /* Add some spacing between the title box and the game board */
+    display: inline-block; /* Ensure the box only takes up the necessary width */
+}
+
+h1 {
+    margin: 0;
+    color: white; /* Text color for the title */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 0 auto; /* Remove top margin to align with the title box */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for the board */
+    border-radius: 10px; /* Rounded corners for the board */
+    padding: 10px; /* Padding inside the board */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0; /* Lighter shade for the cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for the cells */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for a 3D look */
+}
+
+
+
+.cell:hover {
+    background-color: #e0e0e0; /* Slightly darker shade when hovering */
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #FF9933; /* Button background color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Drop shadow for the button */
+}
+
+button:hover {
+    background-color: #FFCC66; /* Lighter shade when hovering */
+}
